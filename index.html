@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +15,7 @@
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-       
+
     </style>
 </head>
 
@@ -26,37 +27,59 @@
             <!-- Logo -->
             <a href="#home" class="flex items-center space-x-2 logo-link">
                 <div class="p-2 bg-primary rounded-full">
-                    <svg class="h-8 w-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    <svg class="h-8 w-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                    </svg>
                 </div>
                 <span class="text-xl font-bold text-gray-900">Botsogo Ba Rona</span>
             </a>
 
             <!-- Desktop Nav Menu -->
             <div class="hidden lg:flex items-center space-x-8">
-                <a href="#home" class="nav-link text-gray-600 hover:text-primary transition-colors duration-300 font-medium">Home</a>
-                <a href="#about" class="nav-link text-gray-600 hover:text-primary transition-colors duration-300 font-medium">About Us</a>
-                <a href="#what-we-do" class="nav-link text-gray-600 hover:text-primary transition-colors duration-300 font-medium">What We Do</a>
-                <a href="#get-involved" class="nav-link text-gray-600 hover:text-primary transition-colors duration-300 font-medium">Get Involved</a>
-                <a href="#contact" class="nav-link text-gray-600 hover:text-primary transition-colors duration-300 font-medium">Contact</a>
-                <a href="#donate" class="bg-accent text-white px-6 py-2 rounded-full font-bold shadow-md hover:bg-orange-600 transition-colors duration-300">Donate Now</a>
+                <a href="#home"
+                    class="nav-link text-gray-600 hover:text-primary transition-colors duration-300 font-medium">Home</a>
+                <a href="#about"
+                    class="nav-link text-gray-600 hover:text-primary transition-colors duration-300 font-medium">About
+                    Us</a>
+                <a href="#what-we-do"
+                    class="nav-link text-gray-600 hover:text-primary transition-colors duration-300 font-medium">What We
+                    Do</a>
+                <a href="#get-involved"
+                    class="nav-link text-gray-600 hover:text-primary transition-colors duration-300 font-medium">Get
+                    Involved</a>
+                <a href="#contact"
+                    class="nav-link text-gray-600 hover:text-primary transition-colors duration-300 font-medium">Contact</a>
+                <a href="#donate"
+                    class="bg-accent text-white px-6 py-2 rounded-full font-bold shadow-md hover:bg-orange-600 transition-colors duration-300">Donate
+                    Now</a>
             </div>
 
             <!-- Mobile Nav Toggle -->
             <div class="lg:hidden flex items-center">
-                <a href="#donate" class="bg-accent text-white px-4 py-2 rounded-full font-bold text-sm shadow-md hover:bg-orange-600 transition-colors duration-300 mr-4">Donate</a>
+                <a href="#donate"
+                    class="bg-accent text-white px-4 py-2 rounded-full font-bold text-sm shadow-md hover:bg-orange-600 transition-colors duration-300 mr-4">Donate</a>
                 <button id="mobile-menu-button" class="text-gray-600 focus:outline-none">
                     <i class="fas fa-bars text-2xl"></i>
                 </button>
             </div>
         </nav>
-        
+
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden lg:hidden bg-white shadow-xl py-4">
             <nav class="flex flex-col space-y-4 px-6">
-                <a href="#home" class="nav-link text-gray-600 hover:text-primary font-medium border-b border-gray-200 pb-2">Home</a>
-                <a href="#about" class="nav-link text-gray-600 hover:text-primary font-medium border-b border-gray-200 pb-2">About Us</a>
-                <a href="#what-we-do" class="nav-link text-gray-600 hover:text-primary font-medium border-b border-gray-200 pb-2">What We Do</a>
-                <a href="#get-involved" class="nav-link text-gray-600 hover:text-primary font-medium border-b border-gray-200 pb-2">Get Involved</a>
+                <a href="#home"
+                    class="nav-link text-gray-600 hover:text-primary font-medium border-b border-gray-200 pb-2">Home</a>
+                <a href="#about"
+                    class="nav-link text-gray-600 hover:text-primary font-medium border-b border-gray-200 pb-2">About
+                    Us</a>
+                <a href="#what-we-do"
+                    class="nav-link text-gray-600 hover:text-primary font-medium border-b border-gray-200 pb-2">What We
+                    Do</a>
+                <a href="#get-involved"
+                    class="nav-link text-gray-600 hover:text-primary font-medium border-b border-gray-200 pb-2">Get
+                    Involved</a>
                 <a href="#contact" class="nav-link text-gray-600 hover:text-primary font-medium">Contact</a>
             </nav>
         </div>
@@ -64,7 +87,8 @@
 
     <main class="pt-24">
         <!-- Message Box for alerts -->
-        <div id="message-box" class="fixed top-24 left-1/2 -translate-x-1/2 p-4 rounded-lg shadow-xl text-white z-50 hidden transition-all duration-300 ease-out transform scale-95 opacity-0">
+        <div id="message-box"
+            class="fixed top-24 left-1/2 -translate-x-1/2 p-4 rounded-lg shadow-xl text-white z-50 hidden transition-all duration-300 ease-out transform scale-95 opacity-0">
             <p id="message-text"></p>
         </div>
 
@@ -76,9 +100,11 @@
                         Empowering a new generation in South Africa.
                     </h1>
                     <p class="mt-4 text-lg md:text-xl max-w-2xl mx-auto">
-                        We advance sexual and reproductive health and rights by strengthening communities and healthcare systems.
+                        We advance sexual and reproductive health and rights by strengthening communities and healthcare
+                        systems.
                     </p>
-                    <a href="#what-we-do" class="inline-block mt-8 bg-accent text-white font-bold py-3 px-8 rounded-full text-lg shadow-lg hover:bg-orange-600 transition-colors duration-300">
+                    <a href="#what-we-do"
+                        class="inline-block mt-8 bg-accent text-white font-bold py-3 px-8 rounded-full text-lg shadow-lg hover:bg-orange-600 transition-colors duration-300">
                         Explore Our Programs
                     </a>
                 </div>
@@ -118,18 +144,28 @@
                         <div class="space-y-6">
                             <h3 class="text-2xl font-semibold">Our Mission</h3>
                             <p class="text-lg leading-relaxed">
-                                Botsogo Ba Rona is a resourceful and innovative non-profit organization with a mission to educate and empower South Africans to make responsible life choices. We facilitate the implementation of interventions that are evidence-informed and rights-based, with a strong focus on sexual and reproductive health and rights (SRHR).
+                                Botsogo Ba Rona is a resourceful and innovative non-profit organization with a mission
+                                to educate and empower South Africans to make responsible life choices. We facilitate
+                                the implementation of interventions that are evidence-informed and rights-based, with a
+                                strong focus on sexual and reproductive health and rights (SRHR).
                             </p>
                             <p class="text-lg leading-relaxed">
-                                Since 2001, we have been a women-led and managed organization, dedicated to strengthening health systems and building capacity within vulnerable communities. We operate in provinces across South Africa, from the Eastern Cape to the Western Cape, bringing sustainable social change to where it's needed most.
+                                Since 2001, we have been a women-led and managed organization, dedicated to
+                                strengthening health systems and building capacity within vulnerable communities. We
+                                operate in provinces across South Africa, from the Eastern Cape to the Western Cape,
+                                bringing sustainable social change to where it's needed most.
                             </p>
                         </div>
                         <div class="space-y-6">
                             <h3 class="text-3xl font-bold">Our Core Values</h3>
                             <ul class="space-y-4 text-lg">
-                                <li><i class="fas fa-seedling text-primary mr-2"></i> <strong>Empowerment:</strong> We believe in empowering communities and health staff.</li>
-                                <li><i class="fas fa-lightbulb text-primary mr-2"></i> <strong>Innovation:</strong> We find new ways to address health challenges.</li>
-                                <li><i class="fas fa-hand-holding-usd text-primary mr-2"></i> <strong>Accountability:</strong> We operate with transparency for measurable results.</li>
+                                <li><i class="fas fa-seedling text-primary mr-2"></i> <strong>Empowerment:</strong> We
+                                    believe in empowering communities and health staff.</li>
+                                <li><i class="fas fa-lightbulb text-primary mr-2"></i> <strong>Innovation:</strong> We
+                                    find new ways to address health challenges.</li>
+                                <li><i class="fas fa-hand-holding-usd text-primary mr-2"></i>
+                                    <strong>Accountability:</strong> We operate with transparency for measurable
+                                    results.</li>
                             </ul>
                         </div>
                     </div>
@@ -143,33 +179,39 @@
                 <div class="container mx-auto px-6 z-10 animate-fadeIn">
                     <h2 class="text-4xl font-bold text-center mb-12">Our Programs and Expertise</h2>
                     <p class="text-center text-lg max-w-3xl mx-auto mb-16">
-                        Our work is focused on creating a society where every individual, especially adolescents and youth, has the knowledge and access to services to lead a healthy and productive life.
+                        Our work is focused on creating a society where every individual, especially adolescents and
+                        youth, has the knowledge and access to services to lead a healthy and productive life.
                     </p>
 
                     <!-- Programs Grid -->
                     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                         <!-- Program Card 1 -->
-                        <div class="bg-black bg-opacity-70 rounded-xl shadow-lg p-8 transform hover:scale-105 transition-transform duration-300">
+                        <div
+                            class="bg-black bg-opacity-70 rounded-xl shadow-lg p-8 transform hover:scale-105 transition-transform duration-300">
                             <div class="p-4 bg-secondary text-white rounded-full inline-block mb-4">
                                 <i class="fas fa-child text-3xl"></i>
                             </div>
                             <h3 class="text-2xl font-bold">Adolescent & Youth Friendly Clinic Program</h3>
                             <p class="mt-4">
-                                We design and implement youth-friendly services tailored to the unique needs of adolescents (10-14) and young adults (15-24).
+                                We design and implement youth-friendly services tailored to the unique needs of
+                                adolescents (10-14) and young adults (15-24).
                             </p>
                         </div>
                         <!-- Program Card 2 -->
-                        <div class="bg-black bg-opacity-70 rounded-xl shadow-lg p-8 transform hover:scale-105 transition-transform duration-300">
+                        <div
+                            class="bg-black bg-opacity-70 rounded-xl shadow-lg p-8 transform hover:scale-105 transition-transform duration-300">
                             <div class="p-4 bg-secondary text-white rounded-full inline-block mb-4">
                                 <i class="fas fa-ribbon text-3xl"></i>
                             </div>
                             <h3 class="text-2xl font-bold">HIV/AIDS and TB Care</h3>
                             <p class="mt-4">
-                                We deliver comprehensive, compassionate care for adolescents and young people living with HIV and their families.
+                                We deliver comprehensive, compassionate care for adolescents and young people living
+                                with HIV and their families.
                             </p>
                         </div>
                         <!-- Program Card 3 -->
-                        <div class="bg-black bg-opacity-70 rounded-xl shadow-lg p-8 transform hover:scale-105 transition-transform duration-300">
+                        <div
+                            class="bg-black bg-opacity-70 rounded-xl shadow-lg p-8 transform hover:scale-105 transition-transform duration-300">
                             <div class="p-4 bg-secondary text-white rounded-full inline-block mb-4">
                                 <i class="fas fa-users text-3xl"></i>
                             </div>
@@ -179,17 +221,20 @@
                             </p>
                         </div>
                         <!-- Program Card 4 -->
-                        <div class="bg-black bg-opacity-70 rounded-xl shadow-lg p-8 transform hover:scale-105 transition-transform duration-300">
+                        <div
+                            class="bg-black bg-opacity-70 rounded-xl shadow-lg p-8 transform hover:scale-105 transition-transform duration-300">
                             <div class="p-4 bg-secondary text-white rounded-full inline-block mb-4">
                                 <i class="fas fa-medkit text-3xl"></i>
                             </div>
                             <h3 class="text-2xl font-bold">Comprehensive Abortion Care</h3>
                             <p class="mt-4">
-                                We build the capacity of both communities and health systems to enable free, early, and stigma-free access to safe abortion services.
+                                We build the capacity of both communities and health systems to enable free, early, and
+                                stigma-free access to safe abortion services.
                             </p>
                         </div>
                         <!-- Program Card 5 -->
-                        <div class="bg-black bg-opacity-70 rounded-xl shadow-lg p-8 transform hover:scale-105 transition-transform duration-300">
+                        <div
+                            class="bg-black bg-opacity-70 rounded-xl shadow-lg p-8 transform hover:scale-105 transition-transform duration-300">
                             <div class="p-4 bg-secondary text-white rounded-full inline-block mb-4">
                                 <i class="fas fa-tint text-3xl"></i>
                             </div>
@@ -199,13 +244,15 @@
                             </p>
                         </div>
                         <!-- Program Card 6 -->
-                        <div class="bg-black bg-opacity-70 rounded-xl shadow-lg p-8 transform hover:scale-105 transition-transform duration-300">
+                        <div
+                            class="bg-black bg-opacity-70 rounded-xl shadow-lg p-8 transform hover:scale-105 transition-transform duration-300">
                             <div class="p-4 bg-secondary text-white rounded-full inline-block mb-4">
                                 <i class="fas fa-heart text-3xl"></i>
                             </div>
                             <h3 class="text-2xl font-bold">General SRHR Services</h3>
                             <p class="mt-4">
-                                We strengthen primary health care clinics and community health workers so that more people have access to the information and services they need.
+                                We strengthen primary health care clinics and community health workers so that more
+                                people have access to the information and services they need.
                             </p>
                         </div>
                     </div>
@@ -218,7 +265,8 @@
             <div class="container mx-auto px-6 py-16 animate-fadeIn">
                 <h2 class="text-4xl font-bold text-center text-primary mb-12">Join Us: Be a Part of the Change</h2>
                 <p class="text-center text-lg text-gray-600 max-w-3xl mx-auto mb-16">
-                    Your support is crucial in helping us create lasting social change. There are many ways you can get involved and make a difference.
+                    Your support is crucial in helping us create lasting social change. There are many ways you can get
+                    involved and make a difference.
                 </p>
 
                 <!-- Ways to Get Involved -->
@@ -230,9 +278,11 @@
                         </div>
                         <h3 class="text-2xl font-bold text-gray-900">Make a Donation</h3>
                         <p class="mt-4 text-gray-600">
-                            Your financial contribution directly funds our vital programs, ensuring we can continue our work in vulnerable communities. Every rand makes a difference.
+                            Your financial contribution directly funds our vital programs, ensuring we can continue our
+                            work in vulnerable communities. Every rand makes a difference.
                         </p>
-                        <a href="#contact" class="mt-6 bg-accent text-white font-bold py-3 px-6 rounded-full shadow-md hover:bg-orange-600 transition-colors duration-300 self-stretch">
+                        <a href="#contact"
+                            class="mt-6 bg-accent text-white font-bold py-3 px-6 rounded-full shadow-md hover:bg-orange-600 transition-colors duration-300 self-stretch">
                             Donate Now
                         </a>
                     </div>
@@ -243,9 +293,11 @@
                         </div>
                         <h3 class="text-2xl font-bold text-gray-900">Become a Volunteer</h3>
                         <p class="mt-4 text-gray-600">
-                            Give your time and skills to support our initiatives. We need passionate individuals to help with everything from outreach to administration.
+                            Give your time and skills to support our initiatives. We need passionate individuals to help
+                            with everything from outreach to administration.
                         </p>
-                        <a href="#contact" class="mt-6 bg-secondary text-white font-bold py-3 px-6 rounded-full shadow-md hover:bg-blue-700 transition-colors duration-300 self-stretch">
+                        <a href="#contact"
+                            class="mt-6 bg-secondary text-white font-bold py-3 px-6 rounded-full shadow-md hover:bg-blue-700 transition-colors duration-300 self-stretch">
                             Apply to Volunteer
                         </a>
                     </div>
@@ -256,9 +308,11 @@
                         </div>
                         <h3 class="text-2xl font-bold text-gray-900">Form a Partnership</h3>
                         <p class="mt-4 text-gray-600">
-                            We collaborate with various organizations, government departments, and stakeholders to amplify our impact. Let's work together to create change.
+                            We collaborate with various organizations, government departments, and stakeholders to
+                            amplify our impact. Let's work together to create change.
                         </p>
-                        <a href="#contact" class="mt-6 bg-secondary text-white font-bold py-3 px-6 rounded-full shadow-md hover:bg-blue-700 transition-colors duration-300 self-stretch">
+                        <a href="#contact"
+                            class="mt-6 bg-secondary text-white font-bold py-3 px-6 rounded-full shadow-md hover:bg-blue-700 transition-colors duration-300 self-stretch">
                             Contact Our Team
                         </a>
                     </div>
@@ -276,22 +330,28 @@
                         <form id="contact-form" class="space-y-6">
                             <div>
                                 <label for="name" class="block text-sm font-medium text-gray-700">Full Name</label>
-                                <input type="text" id="name" name="name" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary-300 transition duration-150 ease-in-out px-4 py-2">
+                                <input type="text" id="name" name="name" required
+                                    class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary-300 transition duration-150 ease-in-out px-4 py-2">
                             </div>
                             <div>
                                 <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
-                                <input type="email" id="email" name="email" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary-300 transition duration-150 ease-in-out px-4 py-2">
+                                <input type="email" id="email" name="email" required
+                                    class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary-300 transition duration-150 ease-in-out px-4 py-2">
                             </div>
                             <div>
                                 <label for="subject" class="block text-sm font-medium text-gray-700">Subject</label>
-                                <input type="text" id="subject" name="subject" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary-300 transition duration-150 ease-in-out px-4 py-2">
+                                <input type="text" id="subject" name="subject" required
+                                    class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary-300 transition duration-150 ease-in-out px-4 py-2">
                             </div>
                             <div>
-                                <label for="message" class="block text-sm font-medium text-gray-700">Your Message</label>
-                                <textarea id="message" name="message" rows="4" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary-300 transition duration-150 ease-in-out px-4 py-2"></textarea>
+                                <label for="message" class="block text-sm font-medium text-gray-700">Your
+                                    Message</label>
+                                <textarea id="message" name="message" rows="4" required
+                                    class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary-300 transition duration-150 ease-in-out px-4 py-2"></textarea>
                             </div>
                             <div>
-                                <button type="submit" class="w-full py-3 px-6 rounded-full bg-primary text-white font-bold shadow-lg hover:bg-green-700 transition-colors duration-300">
+                                <button type="submit"
+                                    class="w-full py-3 px-6 rounded-full bg-primary text-white font-bold shadow-lg hover:bg-green-700 transition-colors duration-300">
                                     Send Message
                                 </button>
                             </div>
@@ -341,18 +401,26 @@
             <div>
                 <a href="#home" class="flex items-center space-x-2 logo-link">
                     <div class="p-2 bg-primary rounded-full">
-                        <svg class="h-8 w-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        <svg class="h-8 w-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
                     </div>
-                    <span class="text-xl font-bold text-white">Pathways to Change</span>
+                    <span class="text-xl font-bold text-white">Botsogo Ba Rona</span>
                 </a>
                 <p class="mt-4 text-sm">
                     Empowering South Africans to make responsible life choices through rights-based SRHR interventions.
                 </p>
                 <div class="mt-4 flex space-x-4">
-                    <a href="#" class="text-gray-400 hover:text-primary transition-colors duration-300"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="text-gray-400 hover:text-primary transition-colors duration-300"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="text-gray-400 hover:text-primary transition-colors duration-300"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#" class="text-gray-400 hover:text-primary transition-colors duration-300"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-primary transition-colors duration-300"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-primary transition-colors duration-300"><i
+                            class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-primary transition-colors duration-300"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-primary transition-colors duration-300"><i
+                            class="fab fa-instagram"></i></a>
                 </div>
             </div>
 
@@ -360,10 +428,14 @@
             <div>
                 <h3 class="text-lg font-bold text-white mb-4">Quick Links</h3>
                 <ul class="space-y-2">
-                    <li><a href="#about" class="nav-link hover:text-primary transition-colors duration-300">About Us</a></li>
-                    <li><a href="#what-we-do" class="nav-link hover:text-primary transition-colors duration-300">Our Programs</a></li>
-                    <li><a href="#get-involved" class="nav-link hover:text-primary transition-colors duration-300">Get Involved</a></li>
-                    <li><a href="#contact" class="nav-link hover:text-primary transition-colors duration-300">Contact Us</a></li>
+                    <li><a href="#about" class="nav-link hover:text-primary transition-colors duration-300">About Us</a>
+                    </li>
+                    <li><a href="#what-we-do" class="nav-link hover:text-primary transition-colors duration-300">Our
+                            Programs</a></li>
+                    <li><a href="#get-involved" class="nav-link hover:text-primary transition-colors duration-300">Get
+                            Involved</a></li>
+                    <li><a href="#contact" class="nav-link hover:text-primary transition-colors duration-300">Contact
+                            Us</a></li>
                 </ul>
             </div>
 
@@ -371,10 +443,14 @@
             <div>
                 <h3 class="text-lg font-bold text-white mb-4">Our Focus Areas</h3>
                 <ul class="space-y-2">
-                    <li><a href="#what-we-do" class="hover:text-primary transition-colors duration-300">Youth & Adolescent Health</a></li>
-                    <li><a href="#what-we-do" class="hover:text-primary transition-colors duration-300">Peer Education</a></li>
-                    <li><a href="#what-we-do" class="hover:text-primary transition-colors duration-300">HIV/AIDS and TB Care</a></li>
-                    <li><a href="#what-we-do" class="hover:text-primary transition-colors duration-300">Menstrual Health</a></li>
+                    <li><a href="#what-we-do" class="hover:text-primary transition-colors duration-300">Youth &
+                            Adolescent Health</a></li>
+                    <li><a href="#what-we-do" class="hover:text-primary transition-colors duration-300">Peer
+                            Education</a></li>
+                    <li><a href="#what-we-do" class="hover:text-primary transition-colors duration-300">HIV/AIDS and TB
+                            Care</a></li>
+                    <li><a href="#what-we-do" class="hover:text-primary transition-colors duration-300">Menstrual
+                            Health</a></li>
                 </ul>
             </div>
 
@@ -383,8 +459,10 @@
                 <h3 class="text-lg font-bold text-white mb-4">Stay Connected</h3>
                 <p class="text-sm">Sign up for our newsletter to get the latest updates on our work.</p>
                 <form class="mt-4">
-                    <input type="email" placeholder="Your Email Address" class="w-full p-3 rounded-md bg-gray-800 border border-gray-700 text-white focus:outline-none focus:border-primary">
-                    <button type="submit" class="mt-3 w-full bg-accent text-white font-bold py-3 rounded-md hover:bg-orange-600 transition-colors duration-300">
+                    <input type="email" placeholder="Your Email Address"
+                        class="w-full p-3 rounded-md bg-gray-800 border border-gray-700 text-white focus:outline-none focus:border-primary">
+                    <button type="submit"
+                        class="mt-3 w-full bg-accent text-white font-bold py-3 rounded-md hover:bg-orange-600 transition-colors duration-300">
                         Subscribe
                     </button>
                 </form>
@@ -404,7 +482,7 @@
             const messageBox = document.getElementById('message-box');
             const messageText = document.getElementById('message-text');
             const header = document.querySelector('header');
-            
+
             // Function to show and hide message box
             function showMessage(message, type = 'success') {
                 messageText.textContent = message;
@@ -462,7 +540,7 @@
                     showMessage('Please fill in all fields.', 'error');
                     return;
                 }
-                
+
                 // Simulate form submission
                 console.log('Form submitted:', { name, email, message });
                 showMessage('Thank you for your message! We will be in touch shortly.', 'success');
@@ -473,4 +551,5 @@
         });
     </script>
 </body>
+
 </html>
