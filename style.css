@@ -1,0 +1,107 @@
+ body {
+     font-family: 'Inter', sans-serif;
+     background-color: #f7fafc;
+     /* A very light gray for the body background */
+ }
+
+ /* Custom colors inspired by the NPO's mission */
+ :root {
+     --color-primary: #047857;
+     /* A deep, forest green for health and growth */
+     --color-secondary: #0869a2;
+     /* A strong blue for trust and stability */
+     --color-accent: #f97316;
+     /* A vibrant orange for empowerment and energy */
+ }
+
+ .bg-primary {
+     background-color: var(--color-primary);
+ }
+
+ .text-primary {
+     color: var(--color-primary);
+ }
+
+ .border-primary {
+     border-color: var(--color-primary);
+ }
+
+ .bg-secondary {
+     background-color: var(--color-secondary);
+ }
+
+ .text-secondary {
+     color: var(--color-secondary);
+ }
+
+ .bg-accent {
+     background-color: var(--color-accent);
+ }
+
+ .text-accent {
+     color: var(--color-accent);
+ }
+
+ /* Custom scrollbar for a polished look */
+ ::-webkit-scrollbar {
+     width: 8px;
+ }
+
+ ::-webkit-scrollbar-track {
+     background: #e2e8f0;
+ }
+
+ ::-webkit-scrollbar-thumb {
+     background-color: var(--color-primary);
+     border-radius: 4px;
+ }
+
+ /* Parallax section specific styling */
+ .parallax-section {
+     background-size: cover;
+     background-position: center;
+     background-attachment: fixed;
+     /* Ensures the background image stays fixed as the page scrolls */
+     position: relative;
+ }
+
+ .parallax-section::before {
+     content: '';
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-color: rgba(0, 0, 0, 0.5);
+     /* Overlay to make text readable */
+ }
+
+ /* Specific background images for each parallax section */
+ #home .parallax-bg {
+     background-image: url('images/AYFS_Image_005_Web.png');
+ }
+
+ #about .parallax-bg {
+     background-color: var(--color-secondary);
+ }
+
+ #what-we-do .parallax-bg {
+     background-image: url('images/AYFS_Image_006_Web.png');
+ }
+
+ /* Keyframe for a subtle fade-in animation on content load */
+ @keyframes fadeIn {
+     from {
+         opacity: 0;
+         transform: translateY(20px);
+     }
+
+     to {
+         opacity: 1;
+         transform: translateY(0);
+     }
+ }
+
+ .animate-fadeIn {
+     animation: fadeIn 0.8s ease-out forwards;
+ }
